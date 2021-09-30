@@ -1,0 +1,46 @@
+.myskills {
+    padding-top: 131px;
+    &__title {
+        text-align: center; 
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+        } 
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__wrapper {
+        padding-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 270px) ;
+        gap: 13px;
+    }
+    &__item {
+        padding:30px 29px  25px 30px;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        display: grid;
+        align-content: center;
+        &-text {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        img{
+            max-width: 100%;
+            &-sass{
+                max-width: 65px;
+            }
+        }
+        &-title {
+            margin: 20px 0 15px 0;
+        }
+    }
+    .imgsass {
+        height: 65px;
+    }
+}

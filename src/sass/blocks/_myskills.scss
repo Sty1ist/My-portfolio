@@ -33,13 +33,16 @@
         padding-top: 120px;
         display: grid;
         grid-template-columns: repeat(2, 350px);
-        gap: 40px;
+        // gap: 40px;
         justify-content: center;
+        // grid-template: repeat(2, minmax(70px, auto)) / repeat(3, 350px);
+        column-gap: 45px;
+        row-gap: 35px;
         &-item{
             width: 350px;
             height: 62px;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template: minmax(21px, auto) 14px / 200px 35px;
             justify-content: space-between;
             align-content: space-between;
         }
